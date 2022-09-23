@@ -5,7 +5,7 @@ resource "azurerm_api_management" "apim" {
   publisher_name      = var.publisher_name
   publisher_email     = var.publisher_email
   sku_name            = var.sku_name
-   lifecycle {
+  lifecycle {
     ignore_changes = [
       tags,
     ]
