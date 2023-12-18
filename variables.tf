@@ -1,66 +1,81 @@
-variable "resource_group_name" {
-  type        = string
-  description = "name of the resource group"
+ variable "name"  {
+  description = "value"
+  type        = string 
 }
-
-variable "location" {
-  type        = string
-  description = "location of the resource group"
+ variable "location" {
+  description = "value"
+  type        = string 
 }
-
-variable "apim_name" {
-  type        = string
-  description = "name of the azurerm_api_management"
+ variable "resource_group_name" {
+  description = "value"
+  type        = string 
 }
-
-variable "sku_name" {
-  type        = string
-  description = "sku_name is a string consisting of two parts separated by an underscore(_). The first part is the name, valid values include: Consumption, Developer, Basic, Standard and Premium. The second part is the capacity (e.g. the number of deployed units of the sku), which must be a positive integer (e.g. Developer_1)."
+ variable "publisher_name" {
+  description = "value"
+  type        = string 
 }
-
-variable "publisher_name" {
-  type        = string
-  description = "The name of publisher/company."
+ variable "publisher_email" {
+  description = "value"
+  type        = string 
 }
-
-variable "publisher_email" {
-  type        = string
-  description = "The email of publisher/company."
+ variable "sku_name" {
+  description = "value"
+  type        = string 
 }
-
-variable "api_name" {
-  type        = string
-  description = "name of the azurerm_api_management_api"
+ variable "subnet_id" {
+  description = "value"
+  type        = string 
 }
-
-variable "revision" {
-  type        = string
-  description = "The Revision which used for this API."
-  default     = "1"
+ variable "public_network_access_enabled" {
+  description = "value"
+  type        = bool 
+  default = true
 }
-
-variable "display_name" {
-  type        = string
-  description = "The display name of the API."
+ variable "virtual_network_type" {
+  description = "value"
+  type        = string 
 }
-
-variable "path" {
-  type        = string
-  description = " The Path for this API Management API, which is a relative URL which uniquely identifies this API and all of its resource paths within the API Management Service."
+ variable "virtual_network_configuration" {
+  description = "value"
+  type        = string 
 }
-
-variable "protocols" {
-  type        = list(string)
-  description = " A list of protocols the operations in this API can be invoked. Possible values are http, https, ws, and wss"
-}
-
-variable "content_format" {
-  type        = string
-  description = "The format of the content from which the API Definition should be imported. Possible values are: openapi, openapi+json, openapi+json-link, openapi-link, swagger-json, swagger-link-json, wadl-link-json, wadl-xml, wsdl and wsdl-link."
-}
-
-variable "content_value" {
-  type        = string
-  description = "The Content from which the API Definition should be imported. When a content_format of *-link-* is specified this must be a URL, otherwise this must be defined inline."
-
-}
+#  variable "tenant_access" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "identity" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "protocols" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "policy" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "sign_up" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "security" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "additional_location" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "proxy" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "certificate" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "delegation" {
+#   description = "value"
+#   type        = string
+# }
