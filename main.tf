@@ -8,9 +8,9 @@ resource "azurerm_api_management" "example" {
   # notification_sender_email = var.notification_sender_email
   public_network_access_enabled = var.public_network_access_enabled
   virtual_network_type = var.virtual_network_type
-  virtual_network_configuration {
-    subnet_id = var.subnet_id
-  }
+  # virtual_network_configuration {
+  #   subnet_id = var.subnet_id
+  # }
   }
 
   # dynamic "tenant_access" {

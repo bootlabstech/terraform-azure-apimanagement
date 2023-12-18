@@ -22,10 +22,10 @@
   description = "value"
   type        = string 
 }
- variable "subnet_id" {
-  description = "value"
-  type        = string 
-}
+#  variable "subnet_id" {
+#   description = "value"
+#   type        = string 
+# }
  variable "public_network_access_enabled" {
   description = "value"
   type        = bool 
@@ -35,10 +35,10 @@
   description = "value"
   type        = string 
 }
- variable "virtual_network_configuration" {
-  description = "value"
-  type        = string 
-}
+#  variable "virtual_network_configuration" {
+#   description = "value"
+#   type        = string 
+# }
 #  variable "tenant_access" {
 #   description = "value"
 #   type        = string 
